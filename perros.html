@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Competencia de Perros</title>
+  <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+  <header>
+    <h1>Competencia de Perros</h1>
+    <p>Ingresa los ganadores y descubre sus nuevos precios</p>
+  </header>
+
+  <main>
+    <section id="dog-competition-form">
+      <h2>Formulario de Ganadores</h2>
+      <form id="competitionForm">
+        <label for="dog1">Puesto 1:</label>
+        <input type="text" id="dog1" name="dog1" placeholder="Raza del perro" required>
+
+        <label for="dog2">Puesto 2:</label>
+        <input type="text" id="dog2" name="dog2" placeholder="Raza del perro" required>
+
+        <label for="dog3">Puesto 3:</label>
+        <input type="text" id="dog3" name="dog3" placeholder="Raza del perro" required>
+
+        <button type="submit">Mostrar ganadores</button>
+      </form>
+    </section>
+
+    <section id="results">
+      <h2>Resultados de la Competencia</h2>
+      <div id="winnerList"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Competencia de Perros</p>
+  </footer>
+
+  <script src="script3.js"></script>
+</body>
+</html>

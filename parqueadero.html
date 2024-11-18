@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Parqueadero</title>
+  <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+  <header>
+    <h1>Parqueadero</h1>
+    <p>Calcula el costo según el tiempo utilizado</p>
+  </header>
+
+  <main>
+    <section id="parking-form">
+      <h2>Formulario de Tiempo</h2>
+      <form id="parkingForm">
+        <label for="hours">Horas o fracción de tiempo:</label>
+        <input type="number" id="hours" name="hours" min="0.01" step="0.01" placeholder="Ejemplo: 2.5" required>
+
+        <button type="submit">Calcular costo</button>
+      </form>
+    </section>
+
+    <section id="result">
+      <h2>Resultado</h2>
+      <div id="output"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Calculadora de Parqueadero</p>
+  </footer>
+
+  <script src="script4.js"></script>
+</body>
+</html>

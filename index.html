@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alquiler de Carros</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Alquiler de Carros</h1>
+    <p>Elige el carro perfecto para tu aventura</p>
+      <nav>
+        <ul>
+        <li><a href="parqueadero.html">parqueadero de Carro</a></li>
+        <li><a href="nomina.html">Cálculo de Nómina</a></li>
+        <li><a href="perros.html">Competencia de Perros</a></li>
+        <li><a href="juego.html">Juego de Preguntas</a></li>
+        </ul>
+      </nav>
+  </header>
+
+  <main>
+    <section id="car-selection">
+      <h2>Selecciona tu carro</h2>
+      <div class="car-card">
+        <img src="imagen/bmwazul.jpg" alt="BMW azul">
+        <p>BMW Azul</p>
+      </div>
+      <div class="car-card">
+        <img src="imagen/mercedesnegro.jpg" alt="Mercedes negro">
+        <p>Mercedes Negro</p>
+      </div>
+      <div class="car-card">
+        <img src="imagen/twingoverde.jpg" alt="Twingo verde">
+        <p>Twingo Verde</p>
+      </div>
+      <div class="car-card">
+        <img src="imagen/megameverde.jpg" alt="Megane rojo">
+        <p>Megane Rojo</p>
+      </div>
+      <div class="car-card">
+        <img src="imagen/chevroletgris.jpg" alt="Chevrolet gris">
+        <p>Chevrolet Gris</p>
+      </div>
+    </section>
+
+    <section id="rental-form">
+      <h2>Formulario de Alquiler</h2>
+      <form id="alquilerForm">
+        <label for="car-type">Tipo de carro:</label>
+        <select id="car-type" name="car-type">
+          <option value="BMW Azul">BMW Azul</option>
+          <option value="Mercedes Negro">Mercedes Negro</option>
+          <option value="Twingo Verde">Twingo Verde</option>
+          <option value="Megane Rojo">Megane Rojo</option>
+          <option value="Chevrolet Gris">Chevrolet Gris</option>
+        </select>
+
+        <label for="rental-days">Días de alquiler:</label>
+        <input type="number" id="rental-days" name="rental-days" min="1" required>
+
+        <button type="submit">Calcular precio</button>
+      </form>
+    </section>
+
+    <section id="result">
+      <h2>Resultado</h2>
+      <div id="output"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Alquiler de Carros</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

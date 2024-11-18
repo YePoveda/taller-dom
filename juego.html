@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juego de Preguntas</title>
+  <link rel="stylesheet" href="style5.css">
+</head>
+<body>
+  <header>
+    <h1>Juego de Preguntas</h1>
+    <p>Responde correctamente para ganar</p>
+  </header>
+
+  <main>
+    <section id="quiz-form">
+      <h2>Preguntas</h2>
+      <form id="quizForm">
+        <label for="question1">1. ¿Cuál es la capital de Francia?</label>
+        <input type="text" id="question1" name="question1" placeholder="Tu respuesta" required>
+
+        <label for="question2">2. ¿Cuánto es 5 x 6?</label>
+        <input type="number" id="question2" name="question2" placeholder="Tu respuesta" required>
+
+        <label for="question3">3. ¿En qué año llegó el hombre a la Luna?</label>
+        <input type="number" id="question3" name="question3" placeholder="Tu respuesta" required>
+
+        <button type="submit">Enviar respuestas</button>
+      </form>
+    </section>
+
+    <section id="result">
+      <h2>Resultado</h2>
+      <div id="output"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Juego de Preguntas</p>
+  </footer>
+
+  <script src="script5.js"></script>
+</body>
+</html>
